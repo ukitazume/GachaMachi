@@ -1,0 +1,825 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		320AF8492C47A4D819F7C451 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320AF8492C47A4D819F7C450 /* QuartzCore.framework */; };
+		320B6C86F11D9990244A9731 /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 320B6C86F11D9990244A9730 /* Three20.bundle */; };
+		AF00B186135D7A0600F112E7 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF00B185135D7A0600F112E7 /* MainWindow.xib */; };
+		AF11D306136306AE004F606D /* IconDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = AF11D305136306AC004F606D /* IconDownloader.m */; };
+		AF11D309136311D0004F606D /* Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = AF11D308136311D0004F606D /* Placeholder.png */; };
+		AF11D30B13631672004F606D /* img_start.png in Resources */ = {isa = PBXBuildFile; fileRef = AF11D30A13631672004F606D /* img_start.png */; };
+		AF11D30D13631698004F606D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AF11D30C13631697004F606D /* Default.png */; };
+		AF11D30F13631755004F606D /* btn_gacha2.png in Resources */ = {isa = PBXBuildFile; fileRef = AF11D30E13631754004F606D /* btn_gacha2.png */; };
+		AF11D31213631BCA004F606D /* AboutViewContoller.m in Sources */ = {isa = PBXBuildFile; fileRef = AF11D31113631BC9004F606D /* AboutViewContoller.m */; };
+		AF11D31413631C10004F606D /* gachamachi10r.png in Resources */ = {isa = PBXBuildFile; fileRef = AF11D31313631C0F004F606D /* gachamachi10r.png */; };
+		AF44E67E1363E14E00889779 /* Icon@2x_4.png in Resources */ = {isa = PBXBuildFile; fileRef = AF44E67D1363E14E00889779 /* Icon@2x_4.png */; };
+		AF44E6801363E16A00889779 /* icon_4.png in Resources */ = {isa = PBXBuildFile; fileRef = AF44E67F1363E16900889779 /* icon_4.png */; };
+		AF44E6861363E4C000889779 /* HitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF44E6851363E4BF00889779 /* HitViewController.m */; };
+		AF44E6891363E97A00889779 /* BackWardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF44E6881363E97900889779 /* BackWardViewController.m */; };
+		AF44E6F11363F50300889779 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AF44E6F01363F50300889779 /* libxml2.2.dylib */; };
+		AF5D299E1363FAC700587583 /* icon_load.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5D299D1363FAC700587583 /* icon_load.png */; };
+		AF5D29B41363FFC400587583 /* bg01.png in Resources */ = {isa = PBXBuildFile; fileRef = AF5D29B31363FFC300587583 /* bg01.png */; };
+		AF6B867C135DC0F3008C6837 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6B867B135DC0F3008C6837 /* QuartzCore.framework */; };
+		AF6B8695135E4C13008C6837 /* YolpPoi.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6B8694135E4C13008C6837 /* YolpPoi.m */; };
+		AF6B869F135F363D008C6837 /* btn_gacha.png in Resources */ = {isa = PBXBuildFile; fileRef = AF6B869E135F363D008C6837 /* btn_gacha.png */; };
+		AF6B86B2135FA26C008C6837 /* History.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6B86B1135FA26B008C6837 /* History.m */; };
+		AF6B86CD136072CF008C6837 /* TumblrClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6B86CC136072CD008C6837 /* TumblrClient.m */; };
+		AF6B86D013607381008C6837 /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6B86CF13607380008C6837 /* APIClient.m */; };
+		AF6B86D31360770A008C6837 /* Tumblr.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6B86D213607707008C6837 /* Tumblr.m */; };
+		AF6B86D61360790A008C6837 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6B86D513607909008C6837 /* DetailViewController.m */; };
+		AF955225136481BA006A6A6C /* shiro74-location.png in Resources */ = {isa = PBXBuildFile; fileRef = AF955224136481BA006A6A6C /* shiro74-location.png */; };
+		AFA046FF135DAB160030726E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA046FE135DAB160030726E /* HomeViewController.m */; };
+		AFA04702135DAC9E0030726E /* YolpSearchClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA04701135DAC9E0030726E /* YolpSearchClient.m */; };
+		AFB88755135D8DBD00809E68 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB8874C135D8DBD00809E68 /* NSObject+SBJSON.m */; };
+		AFB88756135D8DBD00809E68 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB8874E135D8DBD00809E68 /* NSString+SBJSON.m */; };
+		AFB88757135D8DBD00809E68 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB88750135D8DBD00809E68 /* SBJsonBase.m */; };
+		AFB88758135D8DBD00809E68 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB88752135D8DBD00809E68 /* SBJsonParser.m */; };
+		AFB88759135D8DBD00809E68 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB88754135D8DBD00809E68 /* SBJsonWriter.m */; };
+		AFDD4036135D4C3B0021B604 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDD4035135D4C3B0021B604 /* UIKit.framework */; };
+		AFDD4038135D4C3B0021B604 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDD4037135D4C3B0021B604 /* Foundation.framework */; };
+		AFDD403A135D4C3B0021B604 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDD4039135D4C3B0021B604 /* CoreGraphics.framework */; };
+		AFDD4040135D4C3B0021B604 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AFDD403E135D4C3B0021B604 /* InfoPlist.strings */; };
+		AFDD4043135D4C3B0021B604 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFDD4042135D4C3B0021B604 /* main.m */; };
+		AFDD4046135D4C3B0021B604 /* GachaMachiAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFDD4045135D4C3B0021B604 /* GachaMachiAppDelegate.m */; };
+		AFDD404A135D4C3B0021B604 /* GachaMachiAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = AFDD4049135D4C3B0021B604 /* GachaMachiAppDelegate_iPhone.m */; };
+		AFDD4051135D4C3B0021B604 /* GachaMachiAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = AFDD4050135D4C3B0021B604 /* GachaMachiAppDelegate_iPad.m */; };
+		AFDD4054135D4C3B0021B604 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFDD4052135D4C3B0021B604 /* MainWindow_iPad.xib */; };
+		AFDD405B135D4C3B0021B604 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDD4035135D4C3B0021B604 /* UIKit.framework */; };
+		AFDD405C135D4C3B0021B604 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDD4037135D4C3B0021B604 /* Foundation.framework */; };
+		AFDD405D135D4C3B0021B604 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDD4039135D4C3B0021B604 /* CoreGraphics.framework */; };
+		AFDD4065135D4C3B0021B604 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AFDD4063135D4C3B0021B604 /* InfoPlist.strings */; };
+		AFDD4068135D4C3B0021B604 /* GachaMachiTests.h in Resources */ = {isa = PBXBuildFile; fileRef = AFDD4067135D4C3B0021B604 /* GachaMachiTests.h */; };
+		AFDD406A135D4C3B0021B604 /* GachaMachiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFDD4069135D4C3B0021B604 /* GachaMachiTests.m */; };
+		AFDD40D4135D57D60021B604 /* HistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFDD40D3135D57D60021B604 /* HistoryTableViewController.m */; };
+		AFDD40D7135D59980021B604 /* SettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFDD40D6135D59970021B604 /* SettingTableViewController.m */; };
+		AFDD40DD135D5CA60021B604 /* 22-skull-n-crossbones.png in Resources */ = {isa = PBXBuildFile; fileRef = AFDD40DC135D5CA60021B604 /* 22-skull-n-crossbones.png */; };
+		AFDD40DF135D5E440021B604 /* 68-paperclip.png in Resources */ = {isa = PBXBuildFile; fileRef = AFDD40DE135D5E440021B604 /* 68-paperclip.png */; };
+		AFDD40E1135D5E4D0021B604 /* 106-sliders.png in Resources */ = {isa = PBXBuildFile; fileRef = AFDD40E0135D5E4D0021B604 /* 106-sliders.png */; };
+		AFDD40E4135D5FFD0021B604 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AFDD40E3135D5FFD0021B604 /* LocationManager.m */; };
+		AFDD40E6135D62320021B604 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDD40E5135D62320021B604 /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF0C9EF01362B85F0041F2DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			proxyType = 1;
+			remoteGlobalIDString = BEF31F390F352DF5000DE5D2;
+		};
+		AFDD405E135D4C3B0021B604 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFDD4028135D4C3A0021B604 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFDD4030135D4C3B0021B604;
+			remoteInfo = GachaMachi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		320AF8492C47A4D819F7C450 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		320B6C86F11D9990244A9730 /* Three20.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Three20.bundle; path = ../three20/src/Three20.bundle; sourceTree = SOURCE_ROOT; };
+		AF00B185135D7A0600F112E7 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		AF11D304136306AB004F606D /* IconDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconDownloader.h; sourceTree = "<group>"; };
+		AF11D305136306AC004F606D /* IconDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconDownloader.m; sourceTree = "<group>"; };
+		AF11D308136311D0004F606D /* Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Placeholder.png; sourceTree = "<group>"; };
+		AF11D30A13631672004F606D /* img_start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_start.png; sourceTree = "<group>"; };
+		AF11D30C13631697004F606D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		AF11D30E13631754004F606D /* btn_gacha2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_gacha2.png; sourceTree = "<group>"; };
+		AF11D31013631BC8004F606D /* AboutViewContoller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewContoller.h; sourceTree = "<group>"; };
+		AF11D31113631BC9004F606D /* AboutViewContoller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewContoller.m; sourceTree = "<group>"; };
+		AF11D31313631C0F004F606D /* gachamachi10r.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gachamachi10r.png; sourceTree = "<group>"; };
+		AF44E67D1363E14E00889779 /* Icon@2x_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x_4.png"; sourceTree = "<group>"; };
+		AF44E67F1363E16900889779 /* icon_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_4.png; sourceTree = "<group>"; };
+		AF44E6841363E4BF00889779 /* HitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HitViewController.h; sourceTree = "<group>"; };
+		AF44E6851363E4BF00889779 /* HitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HitViewController.m; sourceTree = "<group>"; };
+		AF44E6871363E97800889779 /* BackWardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackWardViewController.h; sourceTree = "<group>"; };
+		AF44E6881363E97900889779 /* BackWardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackWardViewController.m; sourceTree = "<group>"; };
+		AF44E6F01363F50300889779 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libxml2.2.dylib; sourceTree = "<group>"; };
+		AF5D299D1363FAC700587583 /* icon_load.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_load.png; sourceTree = "<group>"; };
+		AF5D29B31363FFC300587583 /* bg01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg01.png; sourceTree = "<group>"; };
+		AF6B867B135DC0F3008C6837 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = ../../../../../System/Library/Frameworks/QuartzCore.framework; sourceTree = "<group>"; };
+		AF6B8693135E4C12008C6837 /* YolpPoi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YolpPoi.h; sourceTree = "<group>"; };
+		AF6B8694135E4C13008C6837 /* YolpPoi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YolpPoi.m; sourceTree = "<group>"; };
+		AF6B869E135F363D008C6837 /* btn_gacha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_gacha.png; sourceTree = "<group>"; };
+		AF6B86B0135FA26A008C6837 /* History.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = History.h; sourceTree = "<group>"; };
+		AF6B86B1135FA26B008C6837 /* History.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = History.m; sourceTree = "<group>"; };
+		AF6B86CB136072CD008C6837 /* TumblrClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TumblrClient.h; sourceTree = "<group>"; };
+		AF6B86CC136072CD008C6837 /* TumblrClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TumblrClient.m; sourceTree = "<group>"; };
+		AF6B86CE1360737F008C6837 /* APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
+		AF6B86CF13607380008C6837 /* APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
+		AF6B86D113607705008C6837 /* Tumblr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tumblr.h; sourceTree = "<group>"; };
+		AF6B86D213607707008C6837 /* Tumblr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tumblr.m; sourceTree = "<group>"; };
+		AF6B86D413607909008C6837 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		AF6B86D513607909008C6837 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		AF955224136481BA006A6A6C /* shiro74-location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shiro74-location.png"; sourceTree = "<group>"; };
+		AFA046FD135DAB160030726E /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		AFA046FE135DAB160030726E /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		AFA04700135DAC9E0030726E /* YolpSearchClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YolpSearchClient.h; sourceTree = "<group>"; };
+		AFA04701135DAC9E0030726E /* YolpSearchClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YolpSearchClient.m; sourceTree = "<group>"; };
+		AFB8874A135D8DBD00809E68 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		AFB8874B135D8DBD00809E68 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		AFB8874C135D8DBD00809E68 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		AFB8874D135D8DBD00809E68 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		AFB8874E135D8DBD00809E68 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		AFB8874F135D8DBD00809E68 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		AFB88750135D8DBD00809E68 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		AFB88751135D8DBD00809E68 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		AFB88752135D8DBD00809E68 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		AFB88753135D8DBD00809E68 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		AFB88754135D8DBD00809E68 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		AFDD4031135D4C3B0021B604 /* GachaMachi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GachaMachi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFDD4035135D4C3B0021B604 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AFDD4037135D4C3B0021B604 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AFDD4039135D4C3B0021B604 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AFDD403D135D4C3B0021B604 /* GachaMachi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GachaMachi-Info.plist"; sourceTree = "<group>"; };
+		AFDD403F135D4C3B0021B604 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AFDD4041135D4C3B0021B604 /* GachaMachi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GachaMachi-Prefix.pch"; sourceTree = "<group>"; };
+		AFDD4042135D4C3B0021B604 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AFDD4044135D4C3B0021B604 /* GachaMachiAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GachaMachiAppDelegate.h; sourceTree = "<group>"; };
+		AFDD4045135D4C3B0021B604 /* GachaMachiAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GachaMachiAppDelegate.m; sourceTree = "<group>"; };
+		AFDD4048135D4C3B0021B604 /* GachaMachiAppDelegate_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GachaMachiAppDelegate_iPhone.h; path = iPhone/GachaMachiAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		AFDD4049135D4C3B0021B604 /* GachaMachiAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GachaMachiAppDelegate_iPhone.m; path = iPhone/GachaMachiAppDelegate_iPhone.m; sourceTree = "<group>"; };
+		AFDD404F135D4C3B0021B604 /* GachaMachiAppDelegate_iPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GachaMachiAppDelegate_iPad.h; path = iPad/GachaMachiAppDelegate_iPad.h; sourceTree = "<group>"; };
+		AFDD4050135D4C3B0021B604 /* GachaMachiAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GachaMachiAppDelegate_iPad.m; path = iPad/GachaMachiAppDelegate_iPad.m; sourceTree = "<group>"; };
+		AFDD4053135D4C3B0021B604 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+		AFDD405A135D4C3B0021B604 /* GachaMachiTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GachaMachiTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFDD4062135D4C3B0021B604 /* GachaMachiTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GachaMachiTests-Info.plist"; sourceTree = "<group>"; };
+		AFDD4064135D4C3B0021B604 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AFDD4066135D4C3B0021B604 /* GachaMachiTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GachaMachiTests-Prefix.pch"; sourceTree = "<group>"; };
+		AFDD4067135D4C3B0021B604 /* GachaMachiTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GachaMachiTests.h; sourceTree = "<group>"; };
+		AFDD4069135D4C3B0021B604 /* GachaMachiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GachaMachiTests.m; sourceTree = "<group>"; };
+		AFDD40D2135D57D50021B604 /* HistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewController.h; sourceTree = "<group>"; };
+		AFDD40D3135D57D60021B604 /* HistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewController.m; sourceTree = "<group>"; };
+		AFDD40D5135D59970021B604 /* SettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingTableViewController.h; sourceTree = "<group>"; };
+		AFDD40D6135D59970021B604 /* SettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewController.m; sourceTree = "<group>"; };
+		AFDD40DC135D5CA60021B604 /* 22-skull-n-crossbones.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "22-skull-n-crossbones.png"; sourceTree = "<group>"; };
+		AFDD40DE135D5E440021B604 /* 68-paperclip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "68-paperclip.png"; sourceTree = "<group>"; };
+		AFDD40E0135D5E4D0021B604 /* 106-sliders.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "106-sliders.png"; sourceTree = "<group>"; };
+		AFDD40E2135D5FFD0021B604 /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
+		AFDD40E3135D5FFD0021B604 /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
+		AFDD40E5135D62320021B604 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = ../../../../../System/Library/Frameworks/CoreLocation.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFDD402E135D4C3B0021B604 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				320AF8492C47A4D819F7C451 /* QuartzCore.framework in Frameworks */,
+				AFDD4036135D4C3B0021B604 /* UIKit.framework in Frameworks */,
+				AFDD4038135D4C3B0021B604 /* Foundation.framework in Frameworks */,
+				AFDD403A135D4C3B0021B604 /* CoreGraphics.framework in Frameworks */,
+				AFDD40E6135D62320021B604 /* CoreLocation.framework in Frameworks */,
+				AF6B867C135DC0F3008C6837 /* QuartzCore.framework in Frameworks */,
+				AF44E6F11363F50300889779 /* libxml2.2.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFDD4056135D4C3B0021B604 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFDD405B135D4C3B0021B604 /* UIKit.framework in Frameworks */,
+				AFDD405C135D4C3B0021B604 /* Foundation.framework in Frameworks */,
+				AFDD405D135D4C3B0021B604 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AFA04703135DAEB80030726E /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				AFE0D2CD1363F70D00E83FBC /* Twitter+OAuth */,
+				AFB88749135D8DAB00809E68 /* Json */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		AFB88749135D8DAB00809E68 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				AFB8874A135D8DBD00809E68 /* JSON.h */,
+				AFB8874B135D8DBD00809E68 /* NSObject+SBJSON.h */,
+				AFB8874C135D8DBD00809E68 /* NSObject+SBJSON.m */,
+				AFB8874D135D8DBD00809E68 /* NSString+SBJSON.h */,
+				AFB8874E135D8DBD00809E68 /* NSString+SBJSON.m */,
+				AFB8874F135D8DBD00809E68 /* SBJsonBase.h */,
+				AFB88750135D8DBD00809E68 /* SBJsonBase.m */,
+				AFB88751135D8DBD00809E68 /* SBJsonParser.h */,
+				AFB88752135D8DBD00809E68 /* SBJsonParser.m */,
+				AFB88753135D8DBD00809E68 /* SBJsonWriter.h */,
+				AFB88754135D8DBD00809E68 /* SBJsonWriter.m */,
+			);
+			name = Json;
+			sourceTree = "<group>";
+		};
+		AFDD4026135D4C3A0021B604 = {
+			isa = PBXGroup;
+			children = (
+				AFDD403B135D4C3B0021B604 /* GachaMachi */,
+				AFDD4060135D4C3B0021B604 /* GachaMachiTests */,
+				AFDD4034135D4C3B0021B604 /* Frameworks */,
+				AFDD4032135D4C3B0021B604 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AFDD4032135D4C3B0021B604 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFDD4031135D4C3B0021B604 /* GachaMachi.app */,
+				AFDD405A135D4C3B0021B604 /* GachaMachiTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFDD4034135D4C3B0021B604 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF44E6F01363F50300889779 /* libxml2.2.dylib */,
+				320AF8492C47A4D819F7C450 /* QuartzCore.framework */,
+				AF6B867B135DC0F3008C6837 /* QuartzCore.framework */,
+				AFDD40E5135D62320021B604 /* CoreLocation.framework */,
+				AFDD4035135D4C3B0021B604 /* UIKit.framework */,
+				AFDD4037135D4C3B0021B604 /* Foundation.framework */,
+				AFDD4039135D4C3B0021B604 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFDD403B135D4C3B0021B604 /* GachaMachi */ = {
+			isa = PBXGroup;
+			children = (
+				AFA04703135DAEB80030726E /* Library */,
+				AFDD40D8135D5C5F0021B604 /* Resource */,
+				AFDD4075135D4D650021B604 /* ViewController */,
+				AFDD4074135D4D580021B604 /* View */,
+				AFDD4073135D4D510021B604 /* Model */,
+				AFDD4044135D4C3B0021B604 /* GachaMachiAppDelegate.h */,
+				AFDD4045135D4C3B0021B604 /* GachaMachiAppDelegate.m */,
+				AFDD4047135D4C3B0021B604 /* iPhone */,
+				AFDD404E135D4C3B0021B604 /* iPad */,
+				AFDD403C135D4C3B0021B604 /* Supporting Files */,
+			);
+			path = GachaMachi;
+			sourceTree = "<group>";
+		};
+		AFDD403C135D4C3B0021B604 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				320B6C86F11D9990244A9730 /* Three20.bundle */,
+				AF00B185135D7A0600F112E7 /* MainWindow.xib */,
+				AFDD403D135D4C3B0021B604 /* GachaMachi-Info.plist */,
+				AFDD403E135D4C3B0021B604 /* InfoPlist.strings */,
+				AFDD4041135D4C3B0021B604 /* GachaMachi-Prefix.pch */,
+				AFDD4042135D4C3B0021B604 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AFDD4047135D4C3B0021B604 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				AFDD4048135D4C3B0021B604 /* GachaMachiAppDelegate_iPhone.h */,
+				AFDD4049135D4C3B0021B604 /* GachaMachiAppDelegate_iPhone.m */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		AFDD404E135D4C3B0021B604 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				AFDD404F135D4C3B0021B604 /* GachaMachiAppDelegate_iPad.h */,
+				AFDD4050135D4C3B0021B604 /* GachaMachiAppDelegate_iPad.m */,
+				AFDD4052135D4C3B0021B604 /* MainWindow_iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		AFDD4060135D4C3B0021B604 /* GachaMachiTests */ = {
+			isa = PBXGroup;
+			children = (
+				AFDD4067135D4C3B0021B604 /* GachaMachiTests.h */,
+				AFDD4069135D4C3B0021B604 /* GachaMachiTests.m */,
+				AFDD4061135D4C3B0021B604 /* Supporting Files */,
+			);
+			path = GachaMachiTests;
+			sourceTree = "<group>";
+		};
+		AFDD4061135D4C3B0021B604 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AFDD4062135D4C3B0021B604 /* GachaMachiTests-Info.plist */,
+				AFDD4063135D4C3B0021B604 /* InfoPlist.strings */,
+				AFDD4066135D4C3B0021B604 /* GachaMachiTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AFDD4073135D4D510021B604 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF11D304136306AB004F606D /* IconDownloader.h */,
+				AF11D305136306AC004F606D /* IconDownloader.m */,
+				AFDD40E2135D5FFD0021B604 /* LocationManager.h */,
+				AFDD40E3135D5FFD0021B604 /* LocationManager.m */,
+				AFA04700135DAC9E0030726E /* YolpSearchClient.h */,
+				AFA04701135DAC9E0030726E /* YolpSearchClient.m */,
+				AF6B8693135E4C12008C6837 /* YolpPoi.h */,
+				AF6B8694135E4C13008C6837 /* YolpPoi.m */,
+				AF6B86B0135FA26A008C6837 /* History.h */,
+				AF6B86B1135FA26B008C6837 /* History.m */,
+				AF6B86CB136072CD008C6837 /* TumblrClient.h */,
+				AF6B86CC136072CD008C6837 /* TumblrClient.m */,
+				AF6B86CE1360737F008C6837 /* APIClient.h */,
+				AF6B86CF13607380008C6837 /* APIClient.m */,
+				AF6B86D113607705008C6837 /* Tumblr.h */,
+				AF6B86D213607707008C6837 /* Tumblr.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		AFDD4074135D4D580021B604 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		AFDD4075135D4D650021B604 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AF11D31013631BC8004F606D /* AboutViewContoller.h */,
+				AF11D31113631BC9004F606D /* AboutViewContoller.m */,
+				AFDD40D2135D57D50021B604 /* HistoryTableViewController.h */,
+				AFDD40D3135D57D60021B604 /* HistoryTableViewController.m */,
+				AFDD40D5135D59970021B604 /* SettingTableViewController.h */,
+				AFDD40D6135D59970021B604 /* SettingTableViewController.m */,
+				AFA046FD135DAB160030726E /* HomeViewController.h */,
+				AFA046FE135DAB160030726E /* HomeViewController.m */,
+				AF6B86D413607909008C6837 /* DetailViewController.h */,
+				AF6B86D513607909008C6837 /* DetailViewController.m */,
+				AF44E6841363E4BF00889779 /* HitViewController.h */,
+				AF44E6851363E4BF00889779 /* HitViewController.m */,
+				AF44E6871363E97800889779 /* BackWardViewController.h */,
+				AF44E6881363E97900889779 /* BackWardViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		AFDD40D8135D5C5F0021B604 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				AFDD40DB135D5C910021B604 /* Image */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		AFDD40DB135D5C910021B604 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				AF955224136481BA006A6A6C /* shiro74-location.png */,
+				AF44E67F1363E16900889779 /* icon_4.png */,
+				AF44E67D1363E14E00889779 /* Icon@2x_4.png */,
+				AF5D29B31363FFC300587583 /* bg01.png */,
+				AF5D299D1363FAC700587583 /* icon_load.png */,
+				AF11D30C13631697004F606D /* Default.png */,
+				AF11D31313631C0F004F606D /* gachamachi10r.png */,
+				AF11D30E13631754004F606D /* btn_gacha2.png */,
+				AF11D30A13631672004F606D /* img_start.png */,
+				AF11D308136311D0004F606D /* Placeholder.png */,
+				AF6B869E135F363D008C6837 /* btn_gacha.png */,
+				AFDD40E0135D5E4D0021B604 /* 106-sliders.png */,
+				AFDD40DE135D5E440021B604 /* 68-paperclip.png */,
+				AFDD40DC135D5CA60021B604 /* 22-skull-n-crossbones.png */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		AFE0D2CD1363F70D00E83FBC /* Twitter+OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				AFE0D2CE1363F70D00E83FBC /* Libraries & Headers */,
+				AFE0D2D01363F70D00E83FBC /* MGTwitterEngine */,
+				AFE0D2D11363F70D00E83FBC /* SAOAuthTwitterEngine */,
+			);
+			path = "Twitter+OAuth";
+			sourceTree = "<group>";
+		};
+		AFE0D2CE1363F70D00E83FBC /* Libraries & Headers */ = {
+			isa = PBXGroup;
+			children = (
+				AFE0D2CF1363F70D00E83FBC /* OAuthConsumer */,
+			);
+			path = "Libraries & Headers";
+			sourceTree = "<group>";
+		};
+		AFE0D2CF1363F70D00E83FBC /* OAuthConsumer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OAuthConsumer;
+			sourceTree = "<group>";
+		};
+		AFE0D2D01363F70D00E83FBC /* MGTwitterEngine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MGTwitterEngine;
+			sourceTree = "<group>";
+		};
+		AFE0D2D11363F70D00E83FBC /* SAOAuthTwitterEngine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SAOAuthTwitterEngine;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFDD4030135D4C3B0021B604 /* GachaMachi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFDD406D135D4C3B0021B604 /* Build configuration list for PBXNativeTarget "GachaMachi" */;
+			buildPhases = (
+				AFDD402D135D4C3B0021B604 /* Sources */,
+				AFDD402E135D4C3B0021B604 /* Frameworks */,
+				AFDD402F135D4C3B0021B604 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF0C9EF11362B85F0041F2DD /* PBXTargetDependency */,
+			);
+			name = GachaMachi;
+			productName = GachaMachi;
+			productReference = AFDD4031135D4C3B0021B604 /* GachaMachi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AFDD4059135D4C3B0021B604 /* GachaMachiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFDD4070135D4C3B0021B604 /* Build configuration list for PBXNativeTarget "GachaMachiTests" */;
+			buildPhases = (
+				AFDD4055135D4C3B0021B604 /* Sources */,
+				AFDD4056135D4C3B0021B604 /* Frameworks */,
+				AFDD4057135D4C3B0021B604 /* Resources */,
+				AFDD4058135D4C3B0021B604 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFDD405F135D4C3B0021B604 /* PBXTargetDependency */,
+			);
+			name = GachaMachiTests;
+			productName = GachaMachiTests;
+			productReference = AFDD405A135D4C3B0021B604 /* GachaMachiTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFDD4028135D4C3A0021B604 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = none;
+			};
+			buildConfigurationList = AFDD402B135D4C3A0021B604 /* Build configuration list for PBXProject "gachamachi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AFDD4026135D4C3A0021B604;
+			productRefGroup = AFDD4032135D4C3B0021B604 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFDD4030135D4C3B0021B604 /* GachaMachi */,
+				AFDD4059135D4C3B0021B604 /* GachaMachiTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFDD402F135D4C3B0021B604 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				320B6C86F11D9990244A9731 /* Three20.bundle in Resources */,
+				AFDD4040135D4C3B0021B604 /* InfoPlist.strings in Resources */,
+				AFDD4054135D4C3B0021B604 /* MainWindow_iPad.xib in Resources */,
+				AFDD40DD135D5CA60021B604 /* 22-skull-n-crossbones.png in Resources */,
+				AFDD40DF135D5E440021B604 /* 68-paperclip.png in Resources */,
+				AFDD40E1135D5E4D0021B604 /* 106-sliders.png in Resources */,
+				AF00B186135D7A0600F112E7 /* MainWindow.xib in Resources */,
+				AF6B869F135F363D008C6837 /* btn_gacha.png in Resources */,
+				AF11D309136311D0004F606D /* Placeholder.png in Resources */,
+				AF11D30B13631672004F606D /* img_start.png in Resources */,
+				AF11D30D13631698004F606D /* Default.png in Resources */,
+				AF11D30F13631755004F606D /* btn_gacha2.png in Resources */,
+				AF11D31413631C10004F606D /* gachamachi10r.png in Resources */,
+				AF44E67E1363E14E00889779 /* Icon@2x_4.png in Resources */,
+				AF44E6801363E16A00889779 /* icon_4.png in Resources */,
+				AF5D299E1363FAC700587583 /* icon_load.png in Resources */,
+				AF5D29B41363FFC400587583 /* bg01.png in Resources */,
+				AF955225136481BA006A6A6C /* shiro74-location.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFDD4057135D4C3B0021B604 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFDD4065135D4C3B0021B604 /* InfoPlist.strings in Resources */,
+				AFDD4068135D4C3B0021B604 /* GachaMachiTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AFDD4058135D4C3B0021B604 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFDD402D135D4C3B0021B604 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFDD4043135D4C3B0021B604 /* main.m in Sources */,
+				AFDD4046135D4C3B0021B604 /* GachaMachiAppDelegate.m in Sources */,
+				AFDD404A135D4C3B0021B604 /* GachaMachiAppDelegate_iPhone.m in Sources */,
+				AFDD4051135D4C3B0021B604 /* GachaMachiAppDelegate_iPad.m in Sources */,
+				AFDD40D4135D57D60021B604 /* HistoryTableViewController.m in Sources */,
+				AFDD40D7135D59980021B604 /* SettingTableViewController.m in Sources */,
+				AFDD40E4135D5FFD0021B604 /* LocationManager.m in Sources */,
+				AFB88755135D8DBD00809E68 /* NSObject+SBJSON.m in Sources */,
+				AFB88756135D8DBD00809E68 /* NSString+SBJSON.m in Sources */,
+				AFB88757135D8DBD00809E68 /* SBJsonBase.m in Sources */,
+				AFB88758135D8DBD00809E68 /* SBJsonParser.m in Sources */,
+				AFB88759135D8DBD00809E68 /* SBJsonWriter.m in Sources */,
+				AFA046FF135DAB160030726E /* HomeViewController.m in Sources */,
+				AFA04702135DAC9E0030726E /* YolpSearchClient.m in Sources */,
+				AF6B8695135E4C13008C6837 /* YolpPoi.m in Sources */,
+				AF6B86B2135FA26C008C6837 /* History.m in Sources */,
+				AF6B86CD136072CF008C6837 /* TumblrClient.m in Sources */,
+				AF6B86D013607381008C6837 /* APIClient.m in Sources */,
+				AF6B86D31360770A008C6837 /* Tumblr.m in Sources */,
+				AF6B86D61360790A008C6837 /* DetailViewController.m in Sources */,
+				AF11D306136306AE004F606D /* IconDownloader.m in Sources */,
+				AF11D31213631BCA004F606D /* AboutViewContoller.m in Sources */,
+				AF44E6861363E4C000889779 /* HitViewController.m in Sources */,
+				AF44E6891363E97A00889779 /* BackWardViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFDD4055135D4C3B0021B604 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFDD406A135D4C3B0021B604 /* GachaMachiTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF0C9EF11362B85F0041F2DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			targetProxy = AF0C9EF01362B85F0041F2DD /* PBXContainerItemProxy */;
+		};
+		AFDD405F135D4C3B0021B604 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFDD4030135D4C3B0021B604 /* GachaMachi */;
+			targetProxy = AFDD405E135D4C3B0021B604 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AFDD403E135D4C3B0021B604 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFDD403F135D4C3B0021B604 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AFDD4052135D4C3B0021B604 /* MainWindow_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFDD4053135D4C3B0021B604 /* en */,
+			);
+			name = MainWindow_iPad.xib;
+			sourceTree = "<group>";
+		};
+		AFDD4063135D4C3B0021B604 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFDD4064135D4C3B0021B604 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AFDD406B135D4C3B0021B604 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: ゆう 北爪 (5CQ9H5X3L9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(BUILT_PRODUCTS_DIR)/../three20",
+					"$(BUILT_PRODUCTS_DIR)/../../three20",
+					../three20/Build/Products/three20,
+					./GachaMachi/three20/Build/Products/three20,
+					$SDKROOT/usr/include/libxml2,
+					"$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/lib",
+				);
+				"HEADER_SEARCH_PATHS[arch=*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				"OTHER_LDFLAGS[arch=*]" = "";
+				PROVISIONING_PROFILE = "648DDC83-688B-41B1-AFAD-7487D220C907";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		AFDD406C135D4C3B0021B604 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: ゆう 北爪 (5CQ9H5X3L9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(BUILT_PRODUCTS_DIR)/../three20",
+					"$(BUILT_PRODUCTS_DIR)/../../three20",
+					../three20/Build/Products/three20,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-ObjC";
+				PROVISIONING_PROFILE = "648DDC83-688B-41B1-AFAD-7487D220C907";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		AFDD406E135D4C3B0021B604 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GachaMachi/GachaMachi-Prefix.pch";
+				INFOPLIST_FILE = "GachaMachi/GachaMachi-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/GachaMachi/three20/Build/Products/Debug-iphoneos\"",
+					"\"$(SRCROOT)/GachaMachi/three20/Build/Three20Core.build/Debug-iphoneos/Three20Core.build/Objects-normal/armv6\"",
+					"\"$(SRCROOT)/GachaMachi/three20/Build/Three20Core.build/Debug-iphoneos/Three20Core.build/Objects-normal/armv7\"",
+					"\"$(SRCROOT)/GachaMachi/Twitter+OAuth/Libraries & Headers\"",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AFDD406F135D4C3B0021B604 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GachaMachi/GachaMachi-Prefix.pch";
+				INFOPLIST_FILE = "GachaMachi/GachaMachi-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/GachaMachi/three20/Build/Products/Debug-iphoneos\"",
+					"\"$(SRCROOT)/GachaMachi/three20/Build/Three20Core.build/Debug-iphoneos/Three20Core.build/Objects-normal/armv6\"",
+					"\"$(SRCROOT)/GachaMachi/three20/Build/Three20Core.build/Debug-iphoneos/Three20Core.build/Objects-normal/armv7\"",
+					"\"$(SRCROOT)/GachaMachi/Twitter+OAuth/Libraries & Headers\"",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AFDD4071135D4C3B0021B604 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GachaMachi.app/GachaMachi";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GachaMachiTests/GachaMachiTests-Prefix.pch";
+				INFOPLIST_FILE = "GachaMachiTests/GachaMachiTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		AFDD4072135D4C3B0021B604 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GachaMachi.app/GachaMachi";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GachaMachiTests/GachaMachiTests-Prefix.pch";
+				INFOPLIST_FILE = "GachaMachiTests/GachaMachiTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFDD402B135D4C3A0021B604 /* Build configuration list for PBXProject "gachamachi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFDD406B135D4C3B0021B604 /* Debug */,
+				AFDD406C135D4C3B0021B604 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFDD406D135D4C3B0021B604 /* Build configuration list for PBXNativeTarget "GachaMachi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFDD406E135D4C3B0021B604 /* Debug */,
+				AFDD406F135D4C3B0021B604 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFDD4070135D4C3B0021B604 /* Build configuration list for PBXNativeTarget "GachaMachiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFDD4071135D4C3B0021B604 /* Debug */,
+				AFDD4072135D4C3B0021B604 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AFDD4028135D4C3A0021B604 /* Project object */;
+}
