@@ -31,6 +31,8 @@
     if (self) {
         // Custom initialization
         self.locationManager = [[[LocationManager alloc] init] autorelease];
+        self.yolpClient = [[[YolpSearchClient alloc] initWithDelegate:self] autorelease];
+
         self.locationManager.delegate = self;
     }
     return self;
@@ -70,13 +72,13 @@
 - (void)viewWillAppear:(BOOL)animated {
     NSLog(@"will appeare");
     self.gachaButton.hidden = YES;
-    self.yolpClient = [[[YolpSearchClient alloc] initWithDelegate:self] autorelease];
     [self.locationManager startUpdates];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
     NSLog(@"will disappear");
     [self.locationManager stopUpdates];
+    [self.yolpClient canncel];
 
 }
 
@@ -159,6 +161,7 @@
 
 #pragma - LocationManager delegate
 - (void)locationUpdate:(CLLocation *)location {
+    NSLog(@"location update");
     self.stationLable.text = @"近くのガチャを探しています";
     NSDate *date = location.timestamp;
 	NSDateFormatter *formatter = [[[NSDateFormatter alloc] init] autorelease];

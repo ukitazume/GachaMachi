@@ -33,6 +33,7 @@
 		AF6B86D31360770A008C6837 /* Tumblr.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6B86D213607707008C6837 /* Tumblr.m */; };
 		AF6B86D61360790A008C6837 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6B86D513607909008C6837 /* DetailViewController.m */; };
 		AF955225136481BA006A6A6C /* shiro74-location.png in Resources */ = {isa = PBXBuildFile; fileRef = AF955224136481BA006A6A6C /* shiro74-location.png */; };
+		AF95522813648B2E006A6A6C /* TwitterClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AF95522713648B2C006A6A6C /* TwitterClient.m */; };
 		AFA046FF135DAB160030726E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA046FE135DAB160030726E /* HomeViewController.m */; };
 		AFA04702135DAC9E0030726E /* YolpSearchClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AFA04701135DAC9E0030726E /* YolpSearchClient.m */; };
 		AFB88755135D8DBD00809E68 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = AFB8874C135D8DBD00809E68 /* NSObject+SBJSON.m */; };
@@ -116,6 +117,8 @@
 		AF6B86D413607909008C6837 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		AF6B86D513607909008C6837 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		AF955224136481BA006A6A6C /* shiro74-location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shiro74-location.png"; sourceTree = "<group>"; };
+		AF95522613648B2B006A6A6C /* TwitterClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterClient.h; sourceTree = "<group>"; };
+		AF95522713648B2C006A6A6C /* TwitterClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterClient.m; sourceTree = "<group>"; };
 		AFA046FD135DAB160030726E /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		AFA046FE135DAB160030726E /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		AFA04700135DAC9E0030726E /* YolpSearchClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YolpSearchClient.h; sourceTree = "<group>"; };
@@ -195,7 +198,6 @@
 		AFA04703135DAEB80030726E /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				AFE0D2CD1363F70D00E83FBC /* Twitter+OAuth */,
 				AFB88749135D8DAB00809E68 /* Json */,
 			);
 			name = Library;
@@ -340,6 +342,8 @@
 				AF6B86CF13607380008C6837 /* APIClient.m */,
 				AF6B86D113607705008C6837 /* Tumblr.h */,
 				AF6B86D213607707008C6837 /* Tumblr.m */,
+				AF95522613648B2B006A6A6C /* TwitterClient.h */,
+				AF95522713648B2C006A6A6C /* TwitterClient.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -399,45 +403,6 @@
 				AFDD40DC135D5CA60021B604 /* 22-skull-n-crossbones.png */,
 			);
 			name = Image;
-			sourceTree = "<group>";
-		};
-		AFE0D2CD1363F70D00E83FBC /* Twitter+OAuth */ = {
-			isa = PBXGroup;
-			children = (
-				AFE0D2CE1363F70D00E83FBC /* Libraries & Headers */,
-				AFE0D2D01363F70D00E83FBC /* MGTwitterEngine */,
-				AFE0D2D11363F70D00E83FBC /* SAOAuthTwitterEngine */,
-			);
-			path = "Twitter+OAuth";
-			sourceTree = "<group>";
-		};
-		AFE0D2CE1363F70D00E83FBC /* Libraries & Headers */ = {
-			isa = PBXGroup;
-			children = (
-				AFE0D2CF1363F70D00E83FBC /* OAuthConsumer */,
-			);
-			path = "Libraries & Headers";
-			sourceTree = "<group>";
-		};
-		AFE0D2CF1363F70D00E83FBC /* OAuthConsumer */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = OAuthConsumer;
-			sourceTree = "<group>";
-		};
-		AFE0D2D01363F70D00E83FBC /* MGTwitterEngine */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MGTwitterEngine;
-			sourceTree = "<group>";
-		};
-		AFE0D2D11363F70D00E83FBC /* SAOAuthTwitterEngine */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SAOAuthTwitterEngine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -588,6 +553,7 @@
 				AF11D31213631BCA004F606D /* AboutViewContoller.m in Sources */,
 				AF44E6861363E4C000889779 /* HitViewController.m in Sources */,
 				AF44E6891363E97A00889779 /* BackWardViewController.m in Sources */,
+				AF95522813648B2E006A6A6C /* TwitterClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -707,13 +673,13 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GachaMachi/GachaMachi-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					$SDKROOT/usr/include/libxml2,
+					"$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/lib",
+				);
 				INFOPLIST_FILE = "GachaMachi/GachaMachi-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/GachaMachi/three20/Build/Products/Debug-iphoneos\"",
-					"\"$(SRCROOT)/GachaMachi/three20/Build/Three20Core.build/Debug-iphoneos/Three20Core.build/Objects-normal/armv6\"",
-					"\"$(SRCROOT)/GachaMachi/three20/Build/Three20Core.build/Debug-iphoneos/Three20Core.build/Objects-normal/armv7\"",
-					"\"$(SRCROOT)/GachaMachi/Twitter+OAuth/Libraries & Headers\"",
 					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -729,13 +695,13 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GachaMachi/GachaMachi-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					$SDKROOT/usr/include/libxml2,
+					"$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/usr/lib",
+				);
 				INFOPLIST_FILE = "GachaMachi/GachaMachi-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/GachaMachi/three20/Build/Products/Debug-iphoneos\"",
-					"\"$(SRCROOT)/GachaMachi/three20/Build/Three20Core.build/Debug-iphoneos/Three20Core.build/Objects-normal/armv6\"",
-					"\"$(SRCROOT)/GachaMachi/three20/Build/Three20Core.build/Debug-iphoneos/Three20Core.build/Objects-normal/armv7\"",
-					"\"$(SRCROOT)/GachaMachi/Twitter+OAuth/Libraries & Headers\"",
 					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";

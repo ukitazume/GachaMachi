@@ -42,6 +42,7 @@
     [self.photoWeb release];
     [self.poiInfo release];
     [self.tumblrClient release];
+    [self.tumblr release];
     [self.poi release];
     [super dealloc];
 }
@@ -65,6 +66,7 @@
 
 - (void) viewDidDisappear:(BOOL)animated {
     [self.tumblrClient canncel];
+    [self.photoWeb stopLoading];
 }
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
@@ -125,19 +127,7 @@
 
 #pragma - YolpSearchClient delegate
 - (void)connectFinished:(NSURLConnection *)connection {
-/*
-    // ガチャの確定
-    Tumblr *tumblr = [self.tumblrClient.stock objectAtIndex:0];
-    tumblr.poi = self.poi;
-    [History save:tumblr];
 
-    NSString *html = [NSString stringWithFormat:@"<style type=\"text/css\">* {margin:0px; padding:0px;}</style><img id=\"photo\" align=\"center\" width=\"300px\" src=\"%@\">", tumblr.photoUrl];
-    [self.photoWeb loadHTMLString:html baseURL:nil];
-
-    /*
-    html = [NSString stringWithFormat:@"<div id=\"caption\">%@</div>", tumblr.caption];
-    [self.captionWeb loadHTMLString:tumblr.caption baseURL:nil];
-     */
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView
@@ -167,8 +157,12 @@
     }
 }
 
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
+    [self.photoWeb stopLoading];
+}
+
 - (void)connectFailed:(NSError *)error {
-    
+
 }
 
 @end

@@ -46,19 +46,19 @@
     UINavigationController *localNavigationController;
     
     // メイン画
-    localNavigationController = [self newNavigationControllerWithTopController:[HomeViewController class]];
+    localNavigationController = [[self newNavigationControllerWithTopController:[HomeViewController class]] autorelease];
 	UIImage *gachaIcon = [UIImage imageNamed:@"22-skull-n-crossbones.png"];
 	localNavigationController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Gacha" image:gachaIcon tag:1];
     [localViewControllersArray addObject:localNavigationController];
     
     // 履歴画面
-    localNavigationController = [self newNavigationControllerWithTopController:[HistoryTableViewController class]];
+    localNavigationController = [[self newNavigationControllerWithTopController:[HistoryTableViewController class]] autorelease];
     UIImage *iconHistory = [UIImage imageNamed:@"68-paperclip.png"];
 	localNavigationController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"History" image:iconHistory tag:1];
     [localViewControllersArray addObject:localNavigationController];
     
     // セッティング画面
-    localNavigationController = [self newNavigationControllerWithTopController:[SettingTableViewController class]];
+    localNavigationController = [[self newNavigationControllerWithTopController:[SettingTableViewController class]] autorelease];
     UIImage *iconSetting = [UIImage imageNamed:@"106-sliders.png"];
 	localNavigationController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Setting" image:iconSetting tag:1];
     [localViewControllersArray addObject:localNavigationController];
